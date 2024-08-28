@@ -27,6 +27,15 @@
 - `git diff` - check, where the conflicts are
 - `git reset` - undo staging commits (git add -A) -` git commit --amend -m` "Fix typo in README.md" => change the commit message for the latest, most recent commit
 - `git commit --amend --no-edit`- pievieno staged izmaiņas iepriekšējam commitam, un-staged nebūs
+- `git rebase -i HEAD~2` - interactive rebase that (in this case) goes back two commits. Options: swap commits, change commit messages etc.
+
+### To change commit message for an older commit:
+
+1. Find commit that you want, change `pick` to `reword`
+2. Save and Exit
+3. Change the commit message in the new editor
+4. Save and Exit
+5. Force push, if necessary
 
 ## Rebase
 
